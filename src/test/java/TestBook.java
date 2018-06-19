@@ -9,12 +9,7 @@ public class TestBook {
 
     @Before
     public void setup(){
-        book = new Book("Harry Potter", "Fantasy");
-    }
-
-    @Test
-    public void bookHasTitle(){
-        assertEquals("Harry Potter", book.getTitle());
+        book = new Book( "Fantasy");
     }
 
     @Test

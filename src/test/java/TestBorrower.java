@@ -11,7 +11,7 @@ public class TestBorrower {
 
     @Before
     public void before(){
-        book = new Book("Harry Potter", "Fantasy");
+        book = new Book("Fantasy");
         borrower = new Borrower();
     }
 

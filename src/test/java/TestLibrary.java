@@ -11,6 +11,7 @@ public class TestLibrary {
     @Before
     public void before() {
         library = new Library(5);
+        book = new Book("Fantasy");
     }
 
     @Test
@@ -23,8 +24,6 @@ public class TestLibrary {
         library.addBook(book);
         assertEquals(1, library.getBookCount());
     }
-
-
 
     @Test
     public void libraryHasCapacity(){
@@ -41,6 +40,13 @@ public class TestLibrary {
         library.addBook(book);
         library.addBook(book);
         assertEquals(5, library.getCapacity());
+    }
+
+    @Test
+    public void canRemoveBook(){
+        library.addBook(book);
+        library.removeBook(book);
+        assertEquals(0, library.getBookCount());
     }
 
 }

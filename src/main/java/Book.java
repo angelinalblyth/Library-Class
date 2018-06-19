@@ -1,16 +1,9 @@
 public class Book {
 
-
-    private String title;
     private String genre;
 
-    public Book(String  title, String genre){
-        this.title = title;
+    public Book(String genre){
         this.genre = genre;
-    }
-
-    public String getTitle() {
-        return this.title;
     }
 
     public String getGenre() {
