@@ -2,17 +2,24 @@ import java.util.ArrayList;
 
 public class Borrower {
 
-    private ArrayList<Book> book;
+    private ArrayList<Book> books;
 
     public Borrower(){
-        this.book = new ArrayList<Book>();
+        this.books = new ArrayList<Book>();
     }
 
-    public void borrowBook(Book book){
-         this.book.add(book);
-    }
+
 
     public int bookCount() {
-        return this.book.size();
+        return this.books.size();
+    }
+    
+    public int borrowFrom(Library library, Book book){
+        // get the book from the library
+        Book book = library.findBook(book);
+        // if the book is found add to the borrower's book
+        if(book != null){
+            this.books.add(book);
+        }
     }
 }

@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cc-homework-wk6-day2" />
+        <module name="Library" />
       </profile>
     </annotationProcessing>
   </component>
